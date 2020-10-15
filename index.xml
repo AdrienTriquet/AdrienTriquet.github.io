@@ -7,6 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://adrientriquet.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Presentation</title>
+      <link>https://adrientriquet.github.io/presentation/</link>
+      <pubDate>Thu, 15 Oct 2020 16:46:54 +0200</pubDate>
+      
+      <guid>https://adrientriquet.github.io/presentation/</guid>
+      <description>Welcome here, I am Adrien Triquet.   I am a last year engineering student at Telecom SudParis. I am currently studying image processing, with work in artificial intelligence and deep learning. In addition, I am attending a second diploma, a master&amp;rsquo;s degree from the Polytechnic Institute of Paris in virtual and augmented reality.
+  What is the purpose of this blog ?   This blog is meant to group all my &amp;lsquo;Human Computer Interaction&amp;rsquo; works.</description>
+    </item>
+    
+    <item>
       <title>Twelfth lecture</title>
       <link>https://adrientriquet.github.io/12_lecture/</link>
       <pubDate>Fri, 09 Oct 2020 12:39:20 +0200</pubDate>
@@ -191,8 +201,7 @@ Zhongshi He received the B.S. degree in applied mathematics and the Ph.D. degree
       <guid>https://adrientriquet.github.io/2_lecture/</guid>
       <description>Let&amp;rsquo;s start with a quick definition of Gestalt Principles : Gestalt Principles are principles/laws of human perception that describe how humans group similar elements, recognize patterns and simplify complex images when we perceive objects. Designers use the principles to organize content on websites and other interfaces so it is pleasing and easy to understand. (https://www.interaction-design.org/literature/topics/gestalt-principles)
 Let&amp;rsquo;s discover application of those laws that went wrong !
-First First
-The non-erasable pen : I want to take another example, non digital, but depicting the association the brain does easily.</description>
+The non-erasable pen : I want to take an example, non digital, but depicting the association the brain does easily.</description>
     </item>
     
     <item>
