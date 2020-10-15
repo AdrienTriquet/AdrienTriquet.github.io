@@ -41,15 +41,6 @@ Are we already living in a world of ubiquitous computing ? The text It would be 
     </item>
     
     <item>
-      <title>Sixth lab</title>
-      <link>https://adrientriquet.github.io/sixth_lab/</link>
-      <pubDate>Fri, 09 Oct 2020 10:52:07 +0200</pubDate>
-      
-      <guid>https://adrientriquet.github.io/sixth_lab/</guid>
-      <description>Index Next : List : Index lecture, Index lab</description>
-    </item>
-    
-    <item>
       <title>Fifth lab</title>
       <link>https://adrientriquet.github.io/fifth_lab/</link>
       <pubDate>Wed, 30 Sep 2020 15:17:03 +0200</pubDate>
@@ -79,11 +70,9 @@ I of course followed the instruction of the lab to prepare the entire environmen
       
       <guid>https://adrientriquet.github.io/lab_index/</guid>
       <description>First lab
-Second lab
 Third lab
 Fourth lab
-Fifth lab
-Sixth lab</description>
+Fifth lab</description>
     </item>
     
     <item>
@@ -116,17 +105,6 @@ Twelfth lecture</description>
 Here was the beginning of the project.
 Everything went well. I am sorry if this page is a little boring but really it went &amp;lsquo;too&amp;rsquo; well ! Moreover, some part of the learning was already acquired through our &amp;lsquo;Computer Graphics&amp;rsquo; class.
 After a quite long waiting, I had been able to play my own designed game !</description>
-    </item>
-    
-    <item>
-      <title>Second lab</title>
-      <link>https://adrientriquet.github.io/second_lab/</link>
-      <pubDate>Thu, 24 Sep 2020 16:57:06 +0200</pubDate>
-      
-      <guid>https://adrientriquet.github.io/second_lab/</guid>
-      <description>Setting up the unity 3D environment has been a pretty easy task. The harder was to apply to the github student program. That way it became possible to download a full version of Unity.
-Then, I had to downloaded modules : Visual studio was needed of course. I commonly use the jetbrain API to work. However, Visual Studio is perfectly implemented with Unity, so I discovered this software.
-Moreover, as an Iphone user, I had to download the Android build Support and to emulate on Mac an Android OS to test my future applications.</description>
     </item>
     
     <item>
@@ -234,9 +212,8 @@ Let&amp;rsquo;s start with a quick definition of affordance : A situation where 
       <pubDate>Sat, 19 Sep 2020 14:34:01 +0200</pubDate>
       
       <guid>https://adrientriquet.github.io/first_lab/</guid>
-      <description>This first lab aims to give us tools. Therefore, I started to fill and create my blog. I chose to use Hugo as advised by our teachers.
-Process I use the quick start of Hugo to create my project. As a mac user, I am used to homebrew and no difficulty occurred : https://gohugo.io/getting-started/quick-start/ All me modifications were then made with Jetbrain&amp;rsquo;s IDE : PHP Storm.
-Then, I only had to discover all the themes and to pick them.</description>
+      <description>Blog setup   This first lab aims to give us tools. Therefore, I started to fill and create my blog. I chose to use Hugo as advised by our teachers.
+Process I use the quick start of Hugo to create my project. As a mac user, I am used to homebrew and no difficulty occurred : https://gohugo.io/getting-started/quick-start/ All me modifications were then made with Jetbrain&amp;rsquo;s IDE : PHP Storm.</description>
     </item>
     
   </channel>
