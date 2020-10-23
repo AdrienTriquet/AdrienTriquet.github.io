@@ -84,33 +84,56 @@ ready. I did not face issues excepted for batteries.</p>
 <p>Then came the problems.</p>
 <ul>
 <li>
-<h2 id="change-the-pc">Change the PC</h2>
+<h4 id="change-the-pc">Change the PC</h4>
 </li>
 </ul>
 <p>I made roll a ball on my PC, which is not powerful enough to be used for VR. Therefore, I copied the projects on the one
 of the school. However, the versions were not the same and I had to spend time to configure it all again.</p>
 <ul>
 <li>
-<h2 id="export-roll-a-ball-in-vrtk">Export &lsquo;Roll a ball&rsquo; in VRTK</h2>
+<h4 id="export-roll-a-ball-in-vrtk">Export &lsquo;Roll a ball&rsquo; in VRTK</h4>
 </li>
 </ul>
-<p>Then, I faced a new issue : exporting my game into our VRTK project. Indeed, many errors were raised, both in my code
-and in the assets. For instance, it was all pink and / or empty.</p>
-<p>I then tried many solutions, each time demanding to input again the
+<p>The lab purpose is to us the &lsquo;VRTK&rsquo; environment to configure the occulus integration.</p>
+<p>I faced here a new issue : exporting my game into our VRTK project. Indeed, many errors were raised, both in my code
+and in the assets. For instance, it was all pink and / or empty. The assets from my computer were not correcly
+imported in the new one.</p>
+<p>In the assets store : I downloaded and imported the occulus integration. In the same time, I tried many solutions to my import issue,
+each time demanding to input again the
 occulus integration. Finally, as I was unable to understand why the project worked on the computer but not in VRTK,
-which still does not make sense to me, I started from scratch the missing objects / materials.</p>
-<p>Then, we configure all the integration of our device in the unity project and &hellip; it worked !
-At first, I was simply able to start the game and to move inside the occulus.</p>
+which still does not make sense to me, <strong>I started from scratch the missing objects / materials.</strong></p>
+<ul>
+<li>
+<h4 id="controller-and-build-settings">Controller and build settings</h4>
+</li>
+</ul>
+<p>Then, we configure all the integration of our device in the unity project and &hellip; it worked ! For this, I step by step
+followed those many slides of the labs.
+At first, I was simply able to start the game and to move inside the occulus. But it was already good !</p>
 <p><img src="/images/VR1-RAB.jpeg" alt="GitHub Logo"></p>
 <p><img src="/images/VR2-RAB.jpeg" alt="GitHub Logo"></p>
-<h4 id="one-more-issue">One more issue</h4>
+<ul>
+<li>
+<h4 id="one-more-issue--an-update-">One more issue : an update !</h4>
+</li>
+</ul>
 <p>I also had to reboot the computer and reload the entire project as updates came out as I was working !
 Indeed, it worked at first and suddenly did not because of those mandatory updates :</p>
 <p><img src="/images/update.jpeg" alt="GitHub Logo"></p>
-<h4 id="almost-done">Almost done</h4>
+<ul>
+<li>
+<h4 id="almost-done--positioning">Almost done : positioning</h4>
+</li>
+</ul>
 <p>I took some time to find the good distance to put my game from its original place in 0;0;0.
+Indeed, to interact with it, you have to find a perfect distance in order not to be in the table or above the game !
 That being done, I was happy ! Everything was supposed to work and it looks perfect :</p>
 <p><img src="/images/rob-vr3.jpeg" alt="GitHub Logo"></p>
+<ul>
+<li>
+<h4 id="a-flying-game-issue">A flying game issue</h4>
+</li>
+</ul>
 <p>But no ! My game was falling in a strange direction ! Apparently another student had the same issue but it disappeared
 as it came !</p>
 
@@ -118,8 +141,13 @@ as it came !</p>
   <iframe src="https://www.youtube.com/embed/pWKrI1v2J_0?autoplay=1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
-<p>I started the TP from scratch after that and the modification of rigibodies enabled to solve this issue. However,
-another occured :</p>
+<p>I started the TP from scratch after that and the modification of rigibodies enabled to solve this issue.</p>
+<ul>
+<li>
+<h4 id="impossible-to-interact-">Impossible to interact ?</h4>
+</li>
+</ul>
+<p>However, another issue occured, I was not able to interact with the game :</p>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/DFHqYC08dz8?autoplay=1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
@@ -127,22 +155,30 @@ another occured :</p>
 
 <p>Here, my issue was that, even if it seemed to work, I could not move in the game of grab anything.
 The interaction system was still broken.</p>
+<ul>
+<li>
 <h4 id="finally-">Finally !</h4>
-<p>Actually, we finally manage to interact with our game by changing a few lines and reseting our collider boxes.
-For instance, on RightTriggerAxis, the Axis Name was an issue we think !</p>
-<pre><code>![GitHub Logo](/images/solution-Vr.jpeg)
+</li>
+</ul>
+<p>Actually, we finally manage to interact with our game by changing a few lines and resetting our collider boxes.
+For instance, on RightTriggerAxis, the Axis Name was an issue we think ! In any case, the integration seems better
+with others headset that my rift.</p>
+<p><img src="/images/solution-Vr.jpeg" alt="GitHub Logo"></p>
+<ul>
+<li>
+<h4 id="some-thoughts">Some thoughts</h4>
+</li>
+</ul>
+<p>I was very surprise to have to follow 50 slides of requirements to use such as widespread product as occulus.
+It seems there are many ways of doing it, more or less complicated, but I still think an all ready tool is needed to
+really become user-friendly.</p>
+<p>Moreover, I don&rsquo;t have the code for this game as it as been made on PC of the campus.</p>
+<h2 id="index">Index</h2>
+<h4 id="nothing-left-to-see-">Nothing left to see :'(</h4>
+<h4 id="list-">List :</h4>
+<p><a href="https://adrientriquet.github.io/lectures_index/" title="Index lecture">Index lecture</a>,
+<a href="https://adrientriquet.github.io/lab_index/" title="Index lab">Index lab</a></p>
 
-#### Some thoughts
-I was very surprise to have to follow 50 slides of requirements to use such as widespread product as occulus. 
-It seems there are many ways of doing it, more or less complicated, but I still think an all ready tool is needed to 
-really become user-friendly.  
-
-## Index
-#### Nothing left to see :'(
-
-#### List :
-[Index lecture](https://adrientriquet.github.io/lectures_index/ &quot;Index lecture&quot;),
-[Index lab](https://adrientriquet.github.io/lab_index/ &quot;Index lab&quot;)</code></pre>
                         </div>
                     </section>
             <!-- Disqus Inject -->
