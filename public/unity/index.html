@@ -1,0 +1,260 @@
+<!DOCTYPE HTML>
+<html>
+
+    <head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="description" content="Your description">
+	<meta name="author" content="Your name">
+	<meta name="generator" content="Hugo 0.75.1" />
+	<title>First lecture &middot; UCI blog - T.A.</title>
+	<!-- Stylesheets -->
+	
+	<link rel="stylesheet" href="https://adrientriquet.github.io/css/main.css"/>
+	
+	
+
+	
+
+	<!-- Custom Fonts -->
+	<link href="https://adrientriquet.github.io/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+	
+	<link rel="shortcut icon" type="image/x-icon" href="https://adrientriquet.github.io/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="https://adrientriquet.github.io/favicon.ico">
+	
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="js/ie/html5shiv.js"></script>
+	<script src="js/ie/html5shiv.jsrespond.min.js"></script>
+	<![endif]-->
+</head>
+
+    <body>
+
+    <!-- Wrapper -->
+        <div id="wrapper">
+
+            <!-- Header -->
+    <header id="header" class="alt">
+        <a href="https://adrientriquet.github.io/" class="logo"><strong>Triquet Adrien - VAR</strong> <span>All modules</span></a>
+        <nav>
+            <a href="#menu">Menu</a>
+        </nav>
+    </header>
+
+<!-- Menu -->
+    <nav id="menu">
+        <ul class="links">
+            
+                <li><a href="https://adrientriquet.github.io/">Home</a></li>
+            
+                <li><a href="https://adrientriquet.github.io/AdrienTriquet_UCI.github.io/">Direct link to UCI blog</a></li>
+            
+                <li><a href="https://github.com/AdrienTriquet/AdrienTriquet.github.io">Repository</a></li>
+            
+                <li><a href="https://adrientriquet.github.io/elements.html"></a></li>
+            
+
+        </ul>
+        <ul class="actions vertical">
+            
+                <li><a href="https://adrientriquet.github.io/presentation" class="button special fit">Who am I ?</a></li>
+            
+            
+        </ul>
+    </nav>
+
+        <!-- Main -->
+            <div id="main" class="alt">
+
+                
+                    <section id="one">
+                        <div class="inner">
+                            <header class="major">
+                                <h1>First lecture</h1>
+                            </header>
+                            
+                            <p><strong>The purpose of this class was to build our first platformer by our own.</strong>
+We had been really free on the content and game design and it was such a pleaser as I never used
+Unity before.</p>
+<ul>
+<li>
+<h2 id="the-game-design">The game design</h2>
+</li>
+</ul>
+<h4 id="the-first-platform">The first platform</h4>
+<p>I started by the game design, experimenting different tools. I began with a simple platform with walls that hide the
+success area.</p>
+<p><img src="/images/Unity1.png" alt="GitHub Logo"></p>
+<p>This simple game at first enable me to create and try my first code, to have at least a character that moves.</p>
+<h4 id="the-light-effect">The light effect</h4>
+<p>Then, I decided my game would be at first focused on the light. The purpose was to use animated platforms that show and
+hide the light for the player in order to make him fall in gaps.</p>
+<p>I therefore created corridors like this one :</p>
+<p><img src="/images/Unity2.png" alt="GitHub Logo"></p>
+<h4 id="color-code-and-in-between-platform">Color code and in between platform</h4>
+<p>To link both corridors, I decided to put a platform. Actually, I decided that a single one was too boring.
+I then made it move every 12 seconds ! The purpose is that the player either see it come and suspect something,
+either fall and have to figure out how and why. He actually has a visual help : the moving platforms
+are red.</p>
+<p><img src="/images/Unity3.png" alt="GitHub Logo"></p>
+<h4 id="follow-the-particles-">Follow the particles ?</h4>
+<p>At the end of those corridors, I wanted the player to do something not intuitive : go back and jump
+in a hole ! To force this, I make him go to the end of the corridor to pick a collectible.
+The logic reaction is then to jump, I therefore added platforms, and more particularly a red one with particle effect.
+Test showed me player do understand they have to reach it. However, it would have been too easy to go directly there.
+That is why I added reachable platforms before :</p>
+<p><img src="/images/Unity4.png" alt="GitHub Logo"></p>
+<p>However, it was not fun enough, so I made the character bounce on them ! He cannot reach back the corridor and he has to
+stay in the lower area still.</p>
+<h4 id="a-missing-collectible">A missing collectible</h4>
+<p>Actually, the player who now reach the red platform miss a collectible. He is supposed to know it as he has a counter.
+This platform is an elevator, if he reaches the buttom without the collectible, a message tells you to kill yourself.
+I founded that quite funny. Then, you have a checkpoint in the corridor so you don&rsquo;t have to start from scratch.
+I also had to write a whole script to make the elevator platform come back to its original place.</p>
+<h4 id="back-in-black">Back in black</h4>
+<p>Actually, to find the last collectible, most players do the same way, and then jump in the platform I first created.
+But I wrote a script so as long the bleu platform is not triggered, you cannot walk on green ones.
+It is why the player as to go backward. Actually, he has 2 big clues to do that : first the text when he
+reaches the checkpoint (most of the player understand there is something going on when I tested it). Moreover, the music
+in this area is &ldquo;Back in black&rdquo; !</p>
+<h4 id="finally">Finally</h4>
+<p>At the end, you can achieve the game, find the rocket and win : you have then a great winner dance !</p>
+<ul>
+<li>
+<h2 id="design">Design</h2>
+</li>
+</ul>
+<p>I decided to make it in space. I founded a nice skybox and the corridors seemed to be coming from some other place.
+Moreover, I had done on blender a rocket and my character was like an alien. It was also a good thing to create this
+darkness effect in the corridors.</p>
+<h4 id="light-difficulties">Light difficulties</h4>
+<p>I had difficulty in finding a coherent but effective light. Indeed, I wanted something natural. I started by doing,
+with the skybox, a &lsquo;sun&rsquo; light a bit yellow. The sun of the skybox image was actually really where the light was.
+However, even with more light on one size, I needed light from above, so I added a little red one.</p>
+<p>It has been very difficult to find a good balance in those, but the worst was to implement my first idea, which was
+the moving platforms and shadows. I actually ended up finding how to do it, but I am still not sure the effect is
+exactly what I wanted at first.</p>
+<ul>
+<li>
+<h4 id="the-character">The character</h4>
+</li>
+</ul>
+<p>As told on my last page about Blender, I decided to use Mixamo to animate my character. I did not have a lot of choice
+when it came to one in the space. The one I took was actually the only one with an helmet so it could breathe !
+Here it is.</p>
+<p><img src="/images/chara_unity.png" alt="GitHub Logo"></p>
+<p>I then only had to choose the animation on the list and it worked find.</p>
+<p>The most difficult part was finally to implement it on Unity. I decided the blend tree solution was better than
+a list of booleans. Still, I had lot of bugs at first and it took me time to find them in both the tree and the code
+to have a final result.</p>
+<p>I finally have to note that it seemed to me that sometimes, there were bugs only after building, I never understood why.</p>
+<ul>
+<li>
+<h2 id="the-script">The script</h2>
+</li>
+</ul>
+<p>We made a few scripts in the class, but I wrote most of them by my own to achieve specific purposes for the
+game design.</p>
+<p><strong>Here you can find the script : <a href="https://github.com/AdrienTriquet/Unity1-script-">https://github.com/AdrienTriquet/Unity1-script-</a></strong></p>
+<h4 id="code-improvements">Code improvements</h4>
+<p>I also worked on our given codes to improve them. Indeed, two main things appears problematic to me.
+The first was the camera, it was blocked in one direction and it was frustrating for the player. This version enables
+a really free camera with high speed for the mouse.</p>
+<p>The second was the jumping. Indeed, I wanted the player to be able to jump even a few frames after he left the platform.
+I learned this is what great and professional platformers do to better the player experience. Here you can find the
+differences made :</p>
+<p><img src="/images/code1.png" alt="GitHub Logo"></p>
+<ul>
+<li>
+<h2 id="difficulties">Difficulties</h2>
+</li>
+</ul>
+<h2 id="difficulty-of-the-game">Difficulty of the game</h2>
+<p>I think the main issue I had was to dose how hard must be the game.</p>
+<p>For the jumps, I started by finding the real limit for the jump range for each jump a player had to do.
+I was doing them one after another. But the first time I made it test, even after resolving camera and all issues,
+the experience was really not good as it was by far too hard. Even next versions were too hard actually. I think,
+even the last and final version is not easy but at least you can do it !</p>
+<h4 id="code-issues">Code issues</h4>
+<h4 id="missing-prefab">Missing prefab</h4>
+<p>After a while without touching this project, I wanted to finalize it. I then had this issue :</p>
+<p><img src="/images/missing.png" alt="GitHub Logo"></p>
+<p>Actually, my character disappeared for some reason and even the component on it did. I never understood what happened but
+I did reconfigure everything for it, even the animations !</p>
+<h4 id="build-issues">Build issues</h4>
+<p>I also faced some issues when it comes to build. The major one was that on a mac I could not do a &lsquo;.exe&rsquo; file. I finish
+by translate my project on another PC to do it !</p>
+<p>Moreover, I faced this issue :</p>
+<p><img src="/images/missing2.png" alt="GitHub Logo"></p>
+<p>It happened to be an issue with a skybox and component that disappeared. To build, I then add to re import
+all the skybox.</p>
+<h2 id="demo-of-the-game-">Demo of the game :</h2>
+<p>Finally, everything works ! You can find bellow a demo of the game.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/-2jaauuFfII?autoplay=1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="index">Index</h2>
+<h4 id="next-module-">Next module :</h4>
+<p><a href="https://adrientriquet.github.io/ai/" title="Artificial intelligence teaching">AI lecture</a></p>
+
+                        </div>
+                    </section>
+            <!-- Disqus Inject -->
+                
+            </div>
+            
+        <!-- Footer -->
+            
+                <!-- Footer -->
+    <footer id="footer">
+        <div class="inner">
+            <ul class="icons">
+                
+                    <li><a href="linkedin.com/in/adrien-triquet" class="icon alt fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+                
+                    <li><a href="https://github.com/AdrienTriquet" class="icon alt fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+                
+                    <li><a href="https://www.facebook.com/atriquet1" class="icon alt fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+                
+                    <li><a href="https://www.instagram.com/adrientriquet" class="icon alt fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+                
+            </ul>
+            <ul class="copyright">
+                <li>&copy; Triquet Adrien</li>
+                
+                <li>Design:  <a href="https://www.html5up.net">HTML5 UP</a></li>
+                
+            </ul>
+        </div>
+    </footer>
+
+            
+        </div>
+
+    <!-- Scripts -->
+        <!-- Scripts -->
+    <!-- jQuery -->
+    <script src="https://adrientriquet.github.io/js/jquery.min.js"></script>
+    <script src="https://adrientriquet.github.io/js/jquery.scrolly.min.js"></script>
+    <script src="https://adrientriquet.github.io/js/jquery.scrollex.min.js"></script>
+    <script src="https://adrientriquet.github.io/js/skel.min.js"></script>
+    <script src="https://adrientriquet.github.io/js/util.js"></script>
+
+    
+
+    <!-- Main JS -->
+    <script src="https://adrientriquet.github.io/js/main.js"></script>
+
+    
+
+    
+
+    </body>
+</html>
