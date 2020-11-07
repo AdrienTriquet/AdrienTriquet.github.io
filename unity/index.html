@@ -52,7 +52,7 @@
             
                 <li><a href="https://adrientriquet.github.io/">Home</a></li>
             
-                <li><a href="https://adrientriquet.github.io/AdrienTriquet_UCI.github.io/">Direct link to UCI blog</a></li>
+                <li><a href="https://adrientriquet.github.io/AdrienTriquet_UCI.github.io/">UCI blog</a></li>
             
                 <li><a href="https://github.com/AdrienTriquet/AdrienTriquet.github.io">Repository</a></li>
             
@@ -78,7 +78,17 @@
                                 <h1>First lecture</h1>
                             </header>
                             
-                            <p><strong>The purpose of this class was to build our first platformer by our own.</strong>
+                            <h2 id="structure-">Structure :</h2>
+<ul>
+<li>Introduction</li>
+<li>Game design</li>
+<li>Design</li>
+<li>The character</li>
+<li>Scripts</li>
+<li>Difficulties</li>
+<li>Demo</li>
+</ul>
+<p><strong>The purpose of this class was to build our first platformer by our own.</strong>
 We had been really free on the content and game design and it was such a pleaser as I never used
 Unity before.</p>
 <ul>
@@ -89,8 +99,9 @@ Unity before.</p>
 <h4 id="the-first-platform">The first platform</h4>
 <p>I started by the game design, experimenting different tools. I began with a simple platform with walls that hide the
 success area.</p>
-<p><img src="/images/Unity1.png" alt="GitHub Logo"></p>
-<p>This simple game at first enable me to create and try my first code, to have at least a character that moves.</p>
+<p><img src="/images/Unity1.png" alt="GitHub Logo">
+nd
+This simple game at first enable me to create and try my first code, to have at least a character that moves.</p>
 <h4 id="the-light-effect">The light effect</h4>
 <p>Then, I decided my game would be at first focused on the light. The purpose was to use animated platforms that show and
 hide the light for the player in order to make him fall in gaps.</p>
@@ -141,7 +152,7 @@ the moving platforms and shadows. I actually ended up finding how to do it, but 
 exactly what I wanted at first.</p>
 <ul>
 <li>
-<h4 id="the-character">The character</h4>
+<h2 id="the-character">The character</h2>
 </li>
 </ul>
 <p>As told on my last page about Blender, I decided to use Mixamo to animate my character. I did not have a lot of choice
@@ -151,7 +162,9 @@ Here it is.</p>
 <p>I then only had to choose the animation on the list and it worked find.</p>
 <p>The most difficult part was finally to implement it on Unity. I decided the blend tree solution was better than
 a list of booleans. Still, I had lot of bugs at first and it took me time to find them in both the tree and the code
-to have a final result.</p>
+to have a final result. Here you can find what it looks like :</p>
+<p><img src="/images/b_anim1.png" alt="GitHub Logo"></p>
+<p><img src="/images/b_anim2.png" alt="GitHub Logo"></p>
 <p>I finally have to note that it seemed to me that sometimes, there were bugs only after building, I never understood why.</p>
 <ul>
 <li>
@@ -174,13 +187,20 @@ differences made :</p>
 <h2 id="difficulties">Difficulties</h2>
 </li>
 </ul>
-<h2 id="difficulty-of-the-game">Difficulty of the game</h2>
+<h4 id="difficulty-of-the-game">Difficulty of the game</h4>
 <p>I think the main issue I had was to dose how hard must be the game.</p>
 <p>For the jumps, I started by finding the real limit for the jump range for each jump a player had to do.
 I was doing them one after another. But the first time I made it test, even after resolving camera and all issues,
 the experience was really not good as it was by far too hard. Even next versions were too hard actually. I think,
 even the last and final version is not easy but at least you can do it !</p>
+<p>I have to note that the entire game can bo done without running if you want something harder !
+Besides, after one minute I made a text appears to help a player that would not know how to run.</p>
 <h4 id="code-issues">Code issues</h4>
+<p>As told before, I had to write entire script from scratch. For instance the following one is quite simple. Still, it
+demands to really understand the way scripts are connected and call one another. It was both fun and interesting actually,
+even if it did not work on the first time ! In any case, I do think that my habit of object oriented code
+was a huge help here, otherwise it can really be misunderstanding.</p>
+<p><img src="/images/code2.png" alt="GitHub Logo"></p>
 <h4 id="missing-prefab">Missing prefab</h4>
 <p>After a while without touching this project, I wanted to finalize it. I then had this issue :</p>
 <p><img src="/images/missing.png" alt="GitHub Logo"></p>
@@ -200,8 +220,7 @@ all the skybox.</p>
   <iframe src="https://www.youtube.com/embed/-2jaauuFfII?autoplay=1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
-<h2 id="index">Index</h2>
-<h4 id="next-module-">Next module :</h4>
+<h2 id="next-module-">Next module :</h2>
 <p><a href="https://adrientriquet.github.io/ai/" title="Artificial intelligence teaching">AI lecture</a></p>
 
                         </div>

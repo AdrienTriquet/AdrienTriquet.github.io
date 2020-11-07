@@ -31,8 +31,10 @@
       <pubDate>Sat, 19 Sep 2020 14:48:26 +0200</pubDate>
       
       <guid>https://adrientriquet.github.io/blender/</guid>
-      <description>A first touch with a rocket   Actually, it was not my very first time on blender as I already learned how to do a few things on my free time. Indeed, mostly interested by software like Final Cut or the Adobe suite (Premiere, Photoshop and lightroom most of all). Blender was another tool I had to learn.
-But actually, to be honest, discovering on a more strict way the effective and basic tools of this very rich software was an excellent thing for me.</description>
+      <description>Structure :   The rocket
+  The car
+  The character
+  A first touch with a rocket   Actually, it was not my very first time on blender as I already learned how to do a few things on my free time. Indeed, mostly interested by software like Final Cut or the Adobe suite (Premiere, Photoshop and lightroom most of all). Blender was another tool I had to learn.</description>
     </item>
     
     <item>
@@ -41,9 +43,8 @@ But actually, to be honest, discovering on a more strict way the effective and b
       <pubDate>Sat, 19 Sep 2020 14:48:26 +0200</pubDate>
       
       <guid>https://adrientriquet.github.io/unity/</guid>
-      <description>The purpose of this class was to build our first platformer by our own. We had been really free on the content and game design and it was such a pleaser as I never used Unity before.
-  The game design   The first platform I started by the game design, experimenting different tools. I began with a simple platform with walls that hide the success area.
-This simple game at first enable me to create and try my first code, to have at least a character that moves.</description>
+      <description>Structure :  Introduction Game design Design The character Scripts Difficulties Demo  The purpose of this class was to build our first platformer by our own. We had been really free on the content and game design and it was such a pleaser as I never used Unity before.
+  The game design   The first platform I started by the game design, experimenting different tools. I began with a simple platform with walls that hide the success area.</description>
     </item>
     
   </channel>
