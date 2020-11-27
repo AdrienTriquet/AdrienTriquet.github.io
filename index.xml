@@ -7,6 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://adrientriquet.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>KNN</title>
+      <link>https://adrientriquet.github.io/knn/</link>
+      <pubDate>Mon, 23 Nov 2020 14:38:32 +0100</pubDate>
+      
+      <guid>https://adrientriquet.github.io/knn/</guid>
+      <description>In this lab, the purpose was to train a KNN to recognise humour on faces.
+In that purpose, we had a big database of 48*48 pixels pictures, and a start of a code on jupiter. It was the first time for me on this software and I found it really great, even as I am now used to google colab. Indeed, the capacity of doing it all in the machine is interesting.</description>
+    </item>
+    
+    <item>
+      <title>Choregraphe</title>
+      <link>https://adrientriquet.github.io/choregraphe/</link>
+      <pubDate>Mon, 23 Nov 2020 12:51:28 +0100</pubDate>
+      
+      <guid>https://adrientriquet.github.io/choregraphe/</guid>
+      <description>Structure :  The instalation The lab  Installation : so many options, so many fails If there is something I will remember about this lab, it will be : OH MY GOD HOW HARD WAS IT TO INSTALL CHOREGRAPH. Here are the different tests I did in order to use the choregraphe application.
+The macbook application Two students, including me, were using macOS. We both had the same issue : the application simply did not launch.</description>
+    </item>
+    
+    <item>
       <title>Presentation</title>
       <link>https://adrientriquet.github.io/presentation/</link>
       <pubDate>Thu, 15 Oct 2020 16:46:54 +0200</pubDate>
