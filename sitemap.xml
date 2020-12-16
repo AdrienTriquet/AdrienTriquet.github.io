@@ -3,6 +3,46 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://adrientriquet.github.io/opencv/</loc>
+    <lastmod>2020-12-16T16:26:37+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://adrientriquet.github.io/3d/</loc>
+    <lastmod>2020-12-16T10:44:18+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://adrientriquet.github.io/rnn/</loc>
+    <lastmod>2020-12-15T16:35:52+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://adrientriquet.github.io/rl/</loc>
+    <lastmod>2020-12-15T14:12:58+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://adrientriquet.github.io/ai3/</loc>
+    <lastmod>2020-12-14T11:30:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://adrientriquet.github.io/ai2/</loc>
+    <lastmod>2020-12-14T11:30:56+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://adrientriquet.github.io/ai0/</loc>
+    <lastmod>2020-12-14T10:54:43+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://adrientriquet.github.io/ai1/</loc>
+    <lastmod>2020-12-09T15:58:08+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://adrientriquet.github.io/knn/</loc>
     <lastmod>2020-11-23T14:38:32+01:00</lastmod>
   </url>
@@ -15,11 +55,6 @@
   <url>
     <loc>https://adrientriquet.github.io/presentation/</loc>
     <lastmod>2020-10-15T16:46:54+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://adrientriquet.github.io/ai/</loc>
-    <lastmod>2020-09-19T14:48:26+02:00</lastmod>
   </url>
   
   <url>

@@ -7,6 +7,103 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://adrientriquet.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>OpenCV</title>
+      <link>https://adrientriquet.github.io/opencv/</link>
+      <pubDate>Wed, 16 Dec 2020 16:26:37 +0100</pubDate>
+      
+      <guid>https://adrientriquet.github.io/opencv/</guid>
+      <description>This class aimed to show things possible with the OpenCv library on Python.
+Of course, I already used it several time to work on pictures or videos.
+Moreover, I know already the OpenPose library after a project of movement recognition about it.
+For the lab part, it has been more than complex :
+ The 3D reconstruction never works because of different paths issues I never succeded to solve. However I was able to try it and to see with over students.</description>
+    </item>
+    
+    <item>
+      <title>3D reconstruction</title>
+      <link>https://adrientriquet.github.io/3d/</link>
+      <pubDate>Wed, 16 Dec 2020 10:44:18 +0100</pubDate>
+      
+      <guid>https://adrientriquet.github.io/3d/</guid>
+      <description>Introduction For this lab, we want to practice the reconstruction of a 3D object thanks to pictures (2D).
+My work I decided to pic my bear I use as keychain. I took 19 pictures of it on a white support. I used as many light as possible even if the natural light was not great as the weather was really cloudy.
+It began wrong as I had this message :</description>
+    </item>
+    
+    <item>
+      <title>Recurrent neural network</title>
+      <link>https://adrientriquet.github.io/rnn/</link>
+      <pubDate>Tue, 15 Dec 2020 16:35:52 +0100</pubDate>
+      
+      <guid>https://adrientriquet.github.io/rnn/</guid>
+      <description>Colab link Here you can find all my code : https://colab.research.google.com/drive/1Ott9Odhu1P6uQP186DWs3ApiEGlzC21i#scrollTo=DvwJIcmOKjOQ
+Introduction After several classes and personal work on CNN which analyse on data after another, this class presents RNN which will enable to analyse for instance a video as such, not simply as several frames.
+Theory For the theory, I think I will remember that the way the calculous and the backpropagation are made are quite similar to feed forward one I already know.</description>
+    </item>
+    
+    <item>
+      <title>Reinforcement Learning</title>
+      <link>https://adrientriquet.github.io/rl/</link>
+      <pubDate>Tue, 15 Dec 2020 14:12:58 +0100</pubDate>
+      
+      <guid>https://adrientriquet.github.io/rl/</guid>
+      <description>Colab link Here you can find all my code : https://colab.research.google.com/drive/1KHNH1-sgeiHZoaU9Gn2laJl_o-Y3d1z7
+Introduction After one class about reinforcement learning, this lab purpose is to implement a method to resolve the &amp;ldquo;Cart pole&amp;rdquo; problem.
+Note that a real RL application would use a framework with most of the tools, here we want to understand how it really works.
+Theory As a reminder, reinforcement learning is a teaching by experience. We test different actions and see what happens then.</description>
+    </item>
+    
+    <item>
+      <title>Cats / dogs recognition</title>
+      <link>https://adrientriquet.github.io/ai3/</link>
+      <pubDate>Mon, 14 Dec 2020 11:30:59 +0100</pubDate>
+      
+      <guid>https://adrientriquet.github.io/ai3/</guid>
+      <description>Repo link Here you can find all my code : https://github.com/AdrienTriquet/IA3
+Moreover, here you can find all the different models I used and saved : https://drive.google.com/file/d/1loBwiJ8QRxWXTxz5hhJ7p15csJfEFJNF/view?usp=sharing
+Introduction This lab aims to implement many different neural networks to see their different results. Let&amp;rsquo;s make my computer melt !
+First, here is a look at the data used :
+Different models   A first CNN   A first simple CNN with two convuloutional layers gave me 74 % of accuracy after testing.</description>
+    </item>
+    
+    <item>
+      <title>Fashion MINST</title>
+      <link>https://adrientriquet.github.io/ai2/</link>
+      <pubDate>Mon, 14 Dec 2020 11:30:56 +0100</pubDate>
+      
+      <guid>https://adrientriquet.github.io/ai2/</guid>
+      <description>Repo link Here you can find all my code : https://github.com/AdrienTriquet/IA2
+Introduction This lab is a classic to begin using CNN and tensorflow : the MINST fashion recognition. It is a little more complex than the digit one.
+Once again, let&amp;rsquo;s see the impact of different parameters in this new CNN.
+Note : you better have a good computer to compute all those network. It can take very long.
+Parameters   Number of filters   For 5 epochs I got :</description>
+    </item>
+    
+    <item>
+      <title>AND / OR / XOR gates</title>
+      <link>https://adrientriquet.github.io/ai0/</link>
+      <pubDate>Mon, 14 Dec 2020 10:54:43 +0100</pubDate>
+      
+      <guid>https://adrientriquet.github.io/ai0/</guid>
+      <description>Repo link Here you can find all my code : https://github.com/AdrienTriquet/IA0
+Introduction This lab had for purpose to give us a first overview of Artificial Intelligence and to create a same work environment for all.
+Being a user of Pycharm already, I did not have to prepare anything. I already work on a good virtual environment on Python 3.8.
+First application At first, we used an ANN (artificial neuron network) to learn the AND gate output.</description>
+    </item>
+    
+    <item>
+      <title>Digit MINST</title>
+      <link>https://adrientriquet.github.io/ai1/</link>
+      <pubDate>Wed, 09 Dec 2020 15:58:08 +0100</pubDate>
+      
+      <guid>https://adrientriquet.github.io/ai1/</guid>
+      <description>Repo link Here you can find all my code : https://github.com/AdrienTriquet/IA1
+Introduction This lab is a classic to begin using CNN and tensorflow : the MINST digit recognition.
+After the build of the network, our purpose was to see the impact of different parameters in the results and to of course understand why.
+The parameters   Number of neurons   Here are the results for 5 epochs and the batch size equal to 32 to determine the impact of the number of neurons in the input dense layer :</description>
+    </item>
+    
+    <item>
       <title>KNN</title>
       <link>https://adrientriquet.github.io/knn/</link>
       <pubDate>Mon, 23 Nov 2020 14:38:32 +0100</pubDate>
@@ -34,15 +131,6 @@ The macbook application Two students, including me, were using macOS. We both ha
       <guid>https://adrientriquet.github.io/presentation/</guid>
       <description>Welcome here, I am Adrien Triquet.   I am a last year engineering student at Telecom SudParis. I am currently studying image processing, with work in artificial intelligence and deep learning. In addition, I am attending a second diploma, a master&amp;rsquo;s degree from the Polytechnic Institute of Paris in virtual and augmented reality.
   What is the purpose of this blog ?   This blog is meant to group all my works for my master among the year.</description>
-    </item>
-    
-    <item>
-      <title>First lecture</title>
-      <link>https://adrientriquet.github.io/ai/</link>
-      <pubDate>Sat, 19 Sep 2020 14:48:26 +0200</pubDate>
-      
-      <guid>https://adrientriquet.github.io/ai/</guid>
-      <description>In progress</description>
     </item>
     
     <item>
