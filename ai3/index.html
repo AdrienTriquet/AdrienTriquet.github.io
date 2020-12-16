@@ -1,0 +1,187 @@
+<!DOCTYPE HTML>
+<html>
+
+    <head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="description" content="Your description">
+	<meta name="author" content="Your name">
+	<meta name="generator" content="Hugo 0.75.1" />
+	<title>Cats / dogs recognition &middot; UCI blog - T.A.</title>
+	<!-- Stylesheets -->
+	
+	<link rel="stylesheet" href="https://adrientriquet.github.io/css/main.css"/>
+	
+	
+
+	
+
+	<!-- Custom Fonts -->
+	<link href="https://adrientriquet.github.io/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+	
+	<link rel="shortcut icon" type="image/x-icon" href="https://adrientriquet.github.io/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="https://adrientriquet.github.io/favicon.ico">
+	
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="js/ie/html5shiv.js"></script>
+	<script src="js/ie/html5shiv.jsrespond.min.js"></script>
+	<![endif]-->
+</head>
+
+    <body>
+
+    <!-- Wrapper -->
+        <div id="wrapper">
+
+            <!-- Header -->
+    <header id="header" class="alt">
+        <a href="https://adrientriquet.github.io/" class="logo"><strong>Triquet Adrien - VAR</strong> <span>All modules</span></a>
+        <nav>
+            <a href="#menu">Menu</a>
+        </nav>
+    </header>
+
+<!-- Menu -->
+    <nav id="menu">
+        <ul class="links">
+            
+                <li><a href="https://adrientriquet.github.io/">Home</a></li>
+            
+                <li><a href="https://adrientriquet.github.io/AdrienTriquet_UCI.github.io/">UCI blog</a></li>
+            
+                <li><a href="https://github.com/AdrienTriquet/AdrienTriquet.github.io">Repository</a></li>
+            
+                <li><a href="https://adrientriquet.github.io/elements.html"></a></li>
+            
+
+        </ul>
+        <ul class="actions vertical">
+            
+                <li><a href="https://adrientriquet.github.io/presentation" class="button special fit">Who am I ?</a></li>
+            
+            
+        </ul>
+    </nav>
+
+        <!-- Main -->
+            <div id="main" class="alt">
+
+                
+                    <section id="one">
+                        <div class="inner">
+                            <header class="major">
+                                <h1>Cats / dogs recognition</h1>
+                            </header>
+                            
+                            <h2 id="repo-link">Repo link</h2>
+<p>Here you can find all my code : <strong><a href="https://github.com/AdrienTriquet/IA3">https://github.com/AdrienTriquet/IA3</a></strong></p>
+<p>Moreover, here you can find all the different models I used and saved :
+<strong><a href="https://drive.google.com/file/d/1loBwiJ8QRxWXTxz5hhJ7p15csJfEFJNF/view?usp=sharing">https://drive.google.com/file/d/1loBwiJ8QRxWXTxz5hhJ7p15csJfEFJNF/view?usp=sharing</a></strong></p>
+<h2 id="introduction">Introduction</h2>
+<p>This lab aims to implement many different neural networks to see their different results.
+Let&rsquo;s make my computer melt !</p>
+<p>First, here is a look at the data used :</p>
+<p><img src="/images/sanitary.png" alt="GitHub Logo"></p>
+<h2 id="different-models">Different models</h2>
+<ul>
+<li>
+<h4 id="a-first-cnn">A first CNN</h4>
+</li>
+</ul>
+<p>A first simple CNN with two convuloutional layers gave me 74 % of accuracy after testing.</p>
+<p>However, the loss value was very high and after 100 epochs, it was clearly overfiting :</p>
+<p><img src="/images/AI3_over.png" alt="GitHub Logo"></p>
+<ul>
+<li>
+<h4 id="dropout">Dropout</h4>
+</li>
+</ul>
+<p>Simply adding a dropout layer made the accuracy slitly increase (79%). However, the loss really gets very low.</p>
+<ul>
+<li>
+<h4 id="vgg16">VGG16</h4>
+</li>
+</ul>
+<p>I now tried a VGG16 pretrained with ImageNet in which I added layers at the end for our data.</p>
+<p>I got 89 % of accuracy.</p>
+<ul>
+<li>
+<h4 id="variant-of-vgg16">variant of VGG16</h4>
+</li>
+</ul>
+<p>I then used the same model as before. However, before every layers of the base VGG16 were not trainable, npw we also
+train on the 4 last layers of it.</p>
+<ul>
+<li>
+<h4 id="5-pre-trained-sota-models">5 pre-trained SOTA models</h4>
+</li>
+</ul>
+<p>With the same layers added as before and 5 epochs, I got :</p>
+<p><img src="/images/AI3_graph3.png" alt="GitHub Logo"></p>
+<p>Those are 5 &lsquo;state of the art&rsquo; structures commonly used.</p>
+<p>Maybe the classement would be different after 100 epochs each, I simply do not have enough computer power.
+It still gives a good overview.</p>
+<h2 id="graphs">Graphs</h2>
+<p>This lab was also the moment to test to plot some interesting graphs about our models :</p>
+<p><img src="/images/AI3_graph1.png" alt="GitHub Logo"></p>
+<p><img src="/images/AI3_graph2.png" alt="GitHub Logo"></p>
+
+                        </div>
+                    </section>
+            <!-- Disqus Inject -->
+                
+            </div>
+            
+        <!-- Footer -->
+            
+                <!-- Footer -->
+    <footer id="footer">
+        <div class="inner">
+            <ul class="icons">
+                
+                    <li><a href="linkedin.com/in/adrien-triquet" class="icon alt fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+                
+                    <li><a href="https://github.com/AdrienTriquet" class="icon alt fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+                
+                    <li><a href="https://www.facebook.com/atriquet1" class="icon alt fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+                
+                    <li><a href="https://www.instagram.com/adrientriquet" class="icon alt fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+                
+            </ul>
+            <ul class="copyright">
+                <li>&copy; Triquet Adrien</li>
+                
+                <li>Design:  <a href="https://www.html5up.net">HTML5 UP</a></li>
+                
+            </ul>
+        </div>
+    </footer>
+
+            
+        </div>
+
+    <!-- Scripts -->
+        <!-- Scripts -->
+    <!-- jQuery -->
+    <script src="https://adrientriquet.github.io/js/jquery.min.js"></script>
+    <script src="https://adrientriquet.github.io/js/jquery.scrolly.min.js"></script>
+    <script src="https://adrientriquet.github.io/js/jquery.scrollex.min.js"></script>
+    <script src="https://adrientriquet.github.io/js/skel.min.js"></script>
+    <script src="https://adrientriquet.github.io/js/util.js"></script>
+
+    
+
+    <!-- Main JS -->
+    <script src="https://adrientriquet.github.io/js/main.js"></script>
+
+    
+
+    
+
+    </body>
+</html>

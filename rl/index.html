@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+<html>
+
+    <head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="description" content="Your description">
+	<meta name="author" content="Your name">
+	<meta name="generator" content="Hugo 0.75.1" />
+	<title>Reinforcement Learning &middot; UCI blog - T.A.</title>
+	<!-- Stylesheets -->
+	
+	<link rel="stylesheet" href="https://adrientriquet.github.io/css/main.css"/>
+	
+	
+
+	
+
+	<!-- Custom Fonts -->
+	<link href="https://adrientriquet.github.io/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+	
+	<link rel="shortcut icon" type="image/x-icon" href="https://adrientriquet.github.io/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="https://adrientriquet.github.io/favicon.ico">
+	
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="js/ie/html5shiv.js"></script>
+	<script src="js/ie/html5shiv.jsrespond.min.js"></script>
+	<![endif]-->
+</head>
+
+    <body>
+
+    <!-- Wrapper -->
+        <div id="wrapper">
+
+            <!-- Header -->
+    <header id="header" class="alt">
+        <a href="https://adrientriquet.github.io/" class="logo"><strong>Triquet Adrien - VAR</strong> <span>All modules</span></a>
+        <nav>
+            <a href="#menu">Menu</a>
+        </nav>
+    </header>
+
+<!-- Menu -->
+    <nav id="menu">
+        <ul class="links">
+            
+                <li><a href="https://adrientriquet.github.io/">Home</a></li>
+            
+                <li><a href="https://adrientriquet.github.io/AdrienTriquet_UCI.github.io/">UCI blog</a></li>
+            
+                <li><a href="https://github.com/AdrienTriquet/AdrienTriquet.github.io">Repository</a></li>
+            
+                <li><a href="https://adrientriquet.github.io/elements.html"></a></li>
+            
+
+        </ul>
+        <ul class="actions vertical">
+            
+                <li><a href="https://adrientriquet.github.io/presentation" class="button special fit">Who am I ?</a></li>
+            
+            
+        </ul>
+    </nav>
+
+        <!-- Main -->
+            <div id="main" class="alt">
+
+                
+                    <section id="one">
+                        <div class="inner">
+                            <header class="major">
+                                <h1>Reinforcement Learning</h1>
+                            </header>
+                            
+                            <h2 id="colab-link">Colab link</h2>
+<p>Here you can find all my code : <a href="https://colab.research.google.com/drive/1KHNH1-sgeiHZoaU9Gn2laJl_o-Y3d1z7">https://colab.research.google.com/drive/1KHNH1-sgeiHZoaU9Gn2laJl_o-Y3d1z7</a></p>
+<h2 id="introduction">Introduction</h2>
+<p>After one class about reinforcement learning, this lab purpose is to implement a method to resolve the
+&ldquo;Cart pole&rdquo; problem.</p>
+<p>Note that a real RL application would use a framework with most of the tools, here we want to understand how it really
+works.</p>
+<h2 id="theory">Theory</h2>
+<p>As a reminder, reinforcement learning is a teaching by experience. We test different actions and see what happens then.
+There is then a delay between action and reward. We use a &lsquo;reward&rsquo; to solve this.</p>
+<p>We have to note differences between On and Off policies. The first is used to make the programm learn by its own
+mistakes whereas the other uses data to learn from the errors of others. An exemple could be filming many
+chests plays and see actions professionals make.</p>
+<p>To learn, we have a first main algorithm : the monte carlo one.
+It has as main advantage that it does not need any model to explore. However, it waits until the end to update the value.
+Therefor, it could never reach a second step or take very long !</p>
+<p>Another method is the temporal difference one that compute it&rsquo;s state accordingly to the difference
+between the state and the prediction at each step.</p>
+<p>SARSA</p>
+<p>For this lab, we will at first use SARSA which is an On-policy, temporal difference method.
+#For this lab, we will use Q-Learning which is an O-policy, temporal difference method.</p>
+<h2 id="the-lab">The lab</h2>
+<p>We use Gym framework for this lab : <a href="https://gym.openai.com">https://gym.openai.com</a></p>
+<p>We start by buidling the network. We see that there is one layer per possible action.</p>
+<p>We then defined a &ldquo;doer&rdquo; which is the function that will do the action. We actually implement their
+the formula of the TD method and the different parameters.</p>
+<p>Then there is the class &lsquo;transition&rsquo; that save all the different parameters each time (state, action done, &hellip;).</p>
+<p>After that, the &lsquo;Experience Replay&rsquo; class will actually contain all the transitions made to arrive at a certain point.</p>
+<p>We now can create a &lsquo;learner&rsquo; which is a class that will learn from the experience saved right before with the replay.
+We here implement the algorithm values thanks to all the parameters defined before.</p>
+<p>Then we make all of this loop to increase data and we hope accuracy.</p>
+<p>Note : we use a &lsquo;while true&rsquo; loop that never stops. We have to make it stop when we want to move forward.
+Of course the more you train it, the better the model must be.</p>
+<p>We can then visualize thanks to &lsquo;gym&rsquo; the output (different transitions made or for instance video of the agent).</p>
+<h2 id="my-tests">My tests</h2>
+<p>training loop : change initaile trainning or change network : add  depth or some capacity</p>
+<p>goal : get score as high as possible</p>
+<ul>
+<li>
+<h4 id="the-basic-one">The basic one</h4>
+</li>
+</ul>
+<p>Let&rsquo;s start with this simple architecture :</p>
+<p><img src="/images/RL1.png" alt="GitHub Logo"></p>
+<p>We use the SARSA algorithm and those parameters :</p>
+<p><img src="/images/RL2.png" alt="GitHub Logo"></p>
+<p>After 5000 iterations, I obtain a score of 22,48.</p>
+<ul>
+<li>
+<h4 id="other-reward-tested">Other reward tested</h4>
+</li>
+</ul>
+<p>I changed the reward to a fixed one at 0.2.</p>
+<p><img src="/images/RL3.png" alt="GitHub Logo"></p>
+<p>After 5000 iterations, I obtain a score of 31.99.</p>
+<p>With a reward shaping (&lsquo;reward = -1 if done else 0.1&rsquo;) I got 37.5 !</p>
+<p>I tried several over parameters.
+For instance : reward = -2 if done else 0.3 gave 22, reward = -2 if done else 0.01 gave 28 and
+reward = -4 if done else 0.1 only 19.</p>
+<ul>
+<li>
+<h4 id="other-structure">other structure</h4>
+</li>
+</ul>
+<p>Here I tested to remove some layers of the system, results were clearly bad :</p>
+<p><img src="/images/RL4.png" alt="GitHub Logo"></p>
+<p>Finally, I tried to make the network deeper, but the results were disappointing :</p>
+<p><img src="/images/RL5.png" alt="GitHub Logo"></p>
+<p><img src="/images/RL6.png" alt="GitHub Logo"></p>
+<p>Note : the time it took to compute was much longer. It is logical but still the difference was significant.</p>
+
+                        </div>
+                    </section>
+            <!-- Disqus Inject -->
+                
+            </div>
+            
+        <!-- Footer -->
+            
+                <!-- Footer -->
+    <footer id="footer">
+        <div class="inner">
+            <ul class="icons">
+                
+                    <li><a href="linkedin.com/in/adrien-triquet" class="icon alt fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+                
+                    <li><a href="https://github.com/AdrienTriquet" class="icon alt fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+                
+                    <li><a href="https://www.facebook.com/atriquet1" class="icon alt fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+                
+                    <li><a href="https://www.instagram.com/adrientriquet" class="icon alt fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+                
+            </ul>
+            <ul class="copyright">
+                <li>&copy; Triquet Adrien</li>
+                
+                <li>Design:  <a href="https://www.html5up.net">HTML5 UP</a></li>
+                
+            </ul>
+        </div>
+    </footer>
+
+            
+        </div>
+
+    <!-- Scripts -->
+        <!-- Scripts -->
+    <!-- jQuery -->
+    <script src="https://adrientriquet.github.io/js/jquery.min.js"></script>
+    <script src="https://adrientriquet.github.io/js/jquery.scrolly.min.js"></script>
+    <script src="https://adrientriquet.github.io/js/jquery.scrollex.min.js"></script>
+    <script src="https://adrientriquet.github.io/js/skel.min.js"></script>
+    <script src="https://adrientriquet.github.io/js/util.js"></script>
+
+    
+
+    <!-- Main JS -->
+    <script src="https://adrientriquet.github.io/js/main.js"></script>
+
+    
+
+    
+
+    </body>
+</html>

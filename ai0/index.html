@@ -1,0 +1,170 @@
+<!DOCTYPE HTML>
+<html>
+
+    <head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="description" content="Your description">
+	<meta name="author" content="Your name">
+	<meta name="generator" content="Hugo 0.75.1" />
+	<title>AND / OR / XOR gates &middot; UCI blog - T.A.</title>
+	<!-- Stylesheets -->
+	
+	<link rel="stylesheet" href="https://adrientriquet.github.io/css/main.css"/>
+	
+	
+
+	
+
+	<!-- Custom Fonts -->
+	<link href="https://adrientriquet.github.io/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+	
+	<link rel="shortcut icon" type="image/x-icon" href="https://adrientriquet.github.io/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="https://adrientriquet.github.io/favicon.ico">
+	
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="js/ie/html5shiv.js"></script>
+	<script src="js/ie/html5shiv.jsrespond.min.js"></script>
+	<![endif]-->
+</head>
+
+    <body>
+
+    <!-- Wrapper -->
+        <div id="wrapper">
+
+            <!-- Header -->
+    <header id="header" class="alt">
+        <a href="https://adrientriquet.github.io/" class="logo"><strong>Triquet Adrien - VAR</strong> <span>All modules</span></a>
+        <nav>
+            <a href="#menu">Menu</a>
+        </nav>
+    </header>
+
+<!-- Menu -->
+    <nav id="menu">
+        <ul class="links">
+            
+                <li><a href="https://adrientriquet.github.io/">Home</a></li>
+            
+                <li><a href="https://adrientriquet.github.io/AdrienTriquet_UCI.github.io/">UCI blog</a></li>
+            
+                <li><a href="https://github.com/AdrienTriquet/AdrienTriquet.github.io">Repository</a></li>
+            
+                <li><a href="https://adrientriquet.github.io/elements.html"></a></li>
+            
+
+        </ul>
+        <ul class="actions vertical">
+            
+                <li><a href="https://adrientriquet.github.io/presentation" class="button special fit">Who am I ?</a></li>
+            
+            
+        </ul>
+    </nav>
+
+        <!-- Main -->
+            <div id="main" class="alt">
+
+                
+                    <section id="one">
+                        <div class="inner">
+                            <header class="major">
+                                <h1>AND / OR / XOR gates</h1>
+                            </header>
+                            
+                            <h2 id="repo-link">Repo link</h2>
+<p>Here you can find all my code : <strong><a href="https://github.com/AdrienTriquet/IA0">https://github.com/AdrienTriquet/IA0</a></strong></p>
+<h2 id="introduction">Introduction</h2>
+<p>This lab had for purpose to give us a first overview of Artificial Intelligence and to create a same work environment
+for all.</p>
+<p>Being a user of Pycharm already, I did not have to prepare anything. I already work on a good virtual environment on Python 3.8.</p>
+<h2 id="first-application">First application</h2>
+<p>At first, we used an ANN (artificial neuron network) to <strong>learn</strong> the AND gate output. Here was my output :</p>
+<p><img src="/images/AI0-AND.png" alt="GitHub Logo"></p>
+<p><strong>To change the gate seeked, you simply have to change the labels as input.</strong></p>
+<h2 id="parameters-">Parameters :</h2>
+<p>Then, let&rsquo;s see the impact of the different parameters on the network.</p>
+<h4 id="epochs">Epochs</h4>
+<p>I seek the epochs number so I got the good result : we see that 100 and 10 gives the same. By testing from 0 to 10,
+I saw that I had valid prediction at 5. This is very empirical.</p>
+<p>Moreover, I made a function « error » in the file XOR. I then saw that the exact value of epochs to have a good
+enough result is not the same each time. Indeed, the value are taken randomly and results are not always the same.
+Before 3000, I sometimes had value &gt; 0.01 but never after 3000.</p>
+<h4 id="activation-fonction-">Activation fonction :</h4>
+<ul>
+<li>We were at first using step unit.</li>
+<li>With the sigmoid function, the prediction are no longer 0 and 1 but almost it :</li>
+</ul>
+<p><img src="/images/AI0-sigmo.png" alt="GitHub Logo"></p>
+<p>We see this method is less accurate.</p>
+<ul>
+<li>Let&rsquo;s compare the sigmoid to an hyperbolic tangent :
+We see the tangent is more accurate.
+Moreover, this activation function enables to go faster to the result, so the results are better.</li>
+</ul>
+<h2 id="tensorflow">Tensorflow</h2>
+<p>We finally had to implement the same network with tensorflow. I made this :</p>
+<p><img src="/images/ANN_tensor.png" alt="GitHub Logo"></p>
+<p>This model with 5000 epochs gave me 100 % accuracy. To change the gate, you simply have the change the labels as
+input again.</p>
+
+                        </div>
+                    </section>
+            <!-- Disqus Inject -->
+                
+            </div>
+            
+        <!-- Footer -->
+            
+                <!-- Footer -->
+    <footer id="footer">
+        <div class="inner">
+            <ul class="icons">
+                
+                    <li><a href="linkedin.com/in/adrien-triquet" class="icon alt fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+                
+                    <li><a href="https://github.com/AdrienTriquet" class="icon alt fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+                
+                    <li><a href="https://www.facebook.com/atriquet1" class="icon alt fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+                
+                    <li><a href="https://www.instagram.com/adrientriquet" class="icon alt fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+                
+            </ul>
+            <ul class="copyright">
+                <li>&copy; Triquet Adrien</li>
+                
+                <li>Design:  <a href="https://www.html5up.net">HTML5 UP</a></li>
+                
+            </ul>
+        </div>
+    </footer>
+
+            
+        </div>
+
+    <!-- Scripts -->
+        <!-- Scripts -->
+    <!-- jQuery -->
+    <script src="https://adrientriquet.github.io/js/jquery.min.js"></script>
+    <script src="https://adrientriquet.github.io/js/jquery.scrolly.min.js"></script>
+    <script src="https://adrientriquet.github.io/js/jquery.scrollex.min.js"></script>
+    <script src="https://adrientriquet.github.io/js/skel.min.js"></script>
+    <script src="https://adrientriquet.github.io/js/util.js"></script>
+
+    
+
+    <!-- Main JS -->
+    <script src="https://adrientriquet.github.io/js/main.js"></script>
+
+    
+
+    
+
+    </body>
+</html>
