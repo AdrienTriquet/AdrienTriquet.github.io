@@ -37,8 +37,8 @@ It began wrong as I had this message :</description>
       
       <guid>https://adrientriquet.github.io/rnn/</guid>
       <description>Colab link Here you can find all my code : https://colab.research.google.com/drive/1Ott9Odhu1P6uQP186DWs3ApiEGlzC21i#scrollTo=DvwJIcmOKjOQ
-Introduction After several classes and personal work on CNN which analyse on data after another, this class presents RNN which will enable to analyse for instance a video as such, not simply as several frames.
-Theory For the theory, I think I will remember that the way the calculous and the backpropagation are made are quite similar to feed forward one I already know.</description>
+Introduction After several classes and personal work on CNN which analyse on data after another, this class presents RNN which will enable to analyse for instance a video as such, not simply as several frames. Indeed, RNN can learn on sequential database.
+It is used du to limitation of the FFNN (Feed Forward Neural Network) which could only use fixed size windows.</description>
     </item>
     
     <item>

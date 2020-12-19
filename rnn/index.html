@@ -83,15 +83,61 @@
 <a href="https://colab.research.google.com/drive/1Ott9Odhu1P6uQP186DWs3ApiEGlzC21i#scrollTo=DvwJIcmOKjOQ">https://colab.research.google.com/drive/1Ott9Odhu1P6uQP186DWs3ApiEGlzC21i#scrollTo=DvwJIcmOKjOQ</a></p>
 <h2 id="introduction">Introduction</h2>
 <p>After several classes and personal work on CNN which analyse on data after another, this class presents RNN which will
-enable to analyse for instance a video as such, not simply as several frames.</p>
+enable to analyse for instance a video as such, not simply as several frames. Indeed, RNN can learn on <strong>sequential
+database.</strong></p>
+<p>It is used du to limitation of the FFNN (Feed Forward Neural Network) which could only use fixed size windows.
+However, increasing the size of this window might cause issues with the labels complexity.</p>
+<p>Therefore, we use RNN. They can deal with variable length vectors, preservation of order, and the tracking of long-term
+dependencies.</p>
 <h2 id="theory">Theory</h2>
 <p>For the theory, I think I will remember that the way the calculous and the backpropagation are made are
 quite similar to feed forward one I already know. However, as we go back, we calculate again the gradient for the
 past states.</p>
-<p>Note : you don&rsquo;t add several layers to RNN like you do to CNN. You can use features out of one RNN layer to input
-another one, but we rarely do it more that three times.</p>
 <p>A first issue with those models are the size of the data which are not known before.
 Moreover, the meaning can change accordingly to this size.</p>
+<h4 id="common-rnn">Common RNN</h4>
+<ul>
+<li>Vanilla RNN
+This is the appelation for different kind of &lsquo;basic&rsquo; networks that can be used by considering different type of input
+and output. You have them summarized here :</li>
+</ul>
+<p><img src="/images/rnn1_theory.png" alt="GitHub Logo">
+(red are input, green are the network and bleu the output)</p>
+<p>The network is based on one formula at every step :</p>
+<p><img src="/images/rnn_theory2.jpg" alt="GitHub Logo"></p>
+<p>Then, the &lsquo;training&rsquo; is done by improving the parameters (weights like for CNN) thanks to backpropagation :</p>
+<p><img src="/images/BPTT.png" alt="GitHub Logo"></p>
+<ul>
+<li>LSTM (Long short term memory) :
+LSTM are a different type of RNN. It is close to how works a Vanilla RNN, however, the cells and the gradient are manage
+a different way.</li>
+</ul>
+<p>It has two internal hidden states :</p>
+<ul>
+<li>Hidden state (short term)</li>
+<li>Cell state (long term)</li>
+</ul>
+<p>It works with four gates to control information of the two states :</p>
+<p><img src="/images/rnn_theory3.jpg" alt="GitHub Logo"></p>
+<ul>
+<li>Forget gate : manage the information that should be forgot or kept from previous states.</li>
+<li>Input gate : manage values to write on the current cell</li>
+<li>Input modulation gate : manage how much to write to the current cell</li>
+<li>Output gate : magane the output from the current cell</li>
+</ul>
+<h4 id="application">Application</h4>
+<p>Most of the time, multilayers RNN (deep RNN) are used.</p>
+<p>Note : however, you don&rsquo;t add several layers to RNN like you do to CNN. You can use features out of one RNN layer to input
+another one, but we rarely do it more that three times. It gives this :</p>
+<p><img src="/images/multi-layer-rnn.png" alt="GitHub Logo"></p>
+<p>RNN are used in :</p>
+<ul>
+<li>Language modelling</li>
+<li>Image generation</li>
+<li>Sequance to sequence (translation for instance)</li>
+<li>Inplicit / explicit attention (decision taken thanks to past information)</li>
+<li>Image captioning</li>
+</ul>
 <h2 id="lab">Lab</h2>
 <p>At first, as always, we have to import the data and process it. Nothing new here, we create a dictonary with the images
 associated to their labels. Then we do a pre processing to remove potential issues and to give relevant type of data
