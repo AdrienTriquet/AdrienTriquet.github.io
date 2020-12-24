@@ -14,9 +14,8 @@
       <guid>https://adrientriquet.github.io/opencv/</guid>
       <description>This class aimed to show things possible with the OpenCv library on Python.
 Of course, I already used it several time to work on pictures or videos.
-Moreover, I know already the OpenPose library after a project of movement recognition about it.
-For the lab part, it has been more than complex :
- The 3D reconstruction never works because of different paths issues I never succeded to solve. However I was able to try it and to see with over students.</description>
+Moreover, I know already the OpenPose library after a project of movement recognition about it (this latter will here also give us a reliability score.)
+To be more precise, we aimed to reconstruct in 3D from multi-views of human pose on a calibrated system.</description>
     </item>
     
     <item>
