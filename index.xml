@@ -7,6 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://adrientriquet.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Mrtk</title>
+      <link>https://adrientriquet.github.io/mrtk/</link>
+      <pubDate>Tue, 02 Feb 2021 14:48:07 +0100</pubDate>
+      
+      <guid>https://adrientriquet.github.io/mrtk/</guid>
+      <description>Introduction &amp;ldquo;MRTK-Unity is a Microsoft-driven project that provides a set of components and features, used to accelerate cross-platform MR app development in Unity.&amp;rdquo;
+Here is how MRTK is defined on the github of the project. It seems then very logical for us to discover this tool.
+I will say it only once, use a microsoft tool on a mac is possible but emulator and the need of the windows sdk disable some functionality.</description>
+    </item>
+    
+    <item>
       <title>OpenCV</title>
       <link>https://adrientriquet.github.io/opencv/</link>
       <pubDate>Wed, 16 Dec 2020 16:26:37 +0100</pubDate>
